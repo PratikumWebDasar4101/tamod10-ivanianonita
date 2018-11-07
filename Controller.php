@@ -187,7 +187,7 @@
 			if (isset($_POST['editpass'])) {
 				$username = $_POST['username'];
 				$newpass = $_POST['newpassword'];
-				$db = new mysqli("localhost", "root", "", "praktikum8");
+				$db = new mysqli("localhost", "root", "", "modul8");
 				$sql = "UPDATE `user` SET password='$newpass' WHERE username='$username'";
 
 				if (mysqli_query($db, $sql)) {
